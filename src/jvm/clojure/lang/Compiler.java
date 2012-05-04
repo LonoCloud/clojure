@@ -5506,6 +5506,10 @@ public static class LocalBinding{
 	public Class getPrimitiveType(){
 		return maybePrimitiveType(init);
 	}
+
+	public int hashCode() {
+		return sym.hashCode();
+	}
 }
 
 public static class LocalBindingExpr implements Expr, MaybePrimitiveExpr, AssignableExpr{
